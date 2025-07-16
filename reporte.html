@@ -1,6 +1,54 @@
 
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h2 {
+    color: #2c3e50;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .status-ok {
+    color: green;
+    font-weight: bold;
+  }
+
+  .status-fail {
+    color: red;
+    font-weight: bold;
+  }
+
+  .summary {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+</style>
+
 <h2>🧪 Resultado de Validación de Usuarios</h2>
-<table border="1" cellpadding="5" cellspacing="0">
+
+<table>
   <thead>
     <tr>
       <th>Nombre</th>
@@ -13,34 +61,37 @@
 
     <tr>
       <td>Luis</td>
-      <td>❌</td>
+      <td class="status-fail">❌</td>
       <td>201</td>
       <td>Edad no es un número</td>
     </tr>
   
     <tr>
       <td>Juan</td>
-      <td>❌</td>
+      <td class="status-fail">❌</td>
       <td>201</td>
       <td>Edad no es un número</td>
     </tr>
   
     <tr>
       <td>Andrea</td>
-      <td>❌</td>
+      <td class="status-fail">❌</td>
       <td>201</td>
       <td>Edad no es un número</td>
     </tr>
   
     <tr>
       <td>Jose</td>
-      <td>❌</td>
+      <td class="status-fail">❌</td>
       <td>201</td>
       <td>Edad no es un número</td>
     </tr>
   
   </tbody>
 </table>
-<p><strong>Total usuarios validados:</strong> 4</p>
-<p><strong>Pasaron:</strong> 0</p>
-<p><strong>Fallaron:</strong> 4</p>
+
+<div class="summary">
+  <p><strong>Total usuarios validados:</strong> 4</p>
+  <p><strong>Pasaron:</strong> 0</p>
+  <p><strong>Fallaron:</strong> 4</p>
+</div>
