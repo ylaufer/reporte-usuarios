@@ -1,111 +1,81 @@
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td.pass {
+      background-color: #d4edda;
+    }
+    td.fail {
+      background-color: #f8d7da;
+    }
+  </style>
 
-  h2 {
-    color: #2c3e50;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-
-  th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  .status-ok {
-    color: green;
-    font-weight: bold;
-  }
-
-  .status-fail {
-    color: red;
-    font-weight: bold;
-  }
-
-  .summary {
-    margin-top: 20px;
-    font-size: 16px;
-  }
-</style>
-
-<h2>🧪 Resultado de Validación de Usuarios</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Status</th>
-      <th>Status Code</th>
-      <th>Error</th>
-    </tr>
-  </thead>
-  <tbody>
+  <h2>🧪 Resultado de Validación de Usuarios</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Status</th>
+        <th>Status Code</th>
+        <th>Error</th>
+      </tr>
+    </thead>
+    <tbody>
 
     <tr>
       <td>Luis</td>
-      <td class="status-ok">✅</td>
+      <td class="pass">✅</td>
       <td>201</td>
       <td></td>
     </tr>
   
     <tr>
       <td>Juan</td>
-      <td class="status-ok">✅</td>
+      <td class="pass">✅</td>
       <td>201</td>
       <td></td>
     </tr>
   
     <tr>
       <td>Andrea</td>
-      <td class="status-ok">✅</td>
+      <td class="pass">✅</td>
       <td>201</td>
       <td></td>
     </tr>
   
     <tr>
       <td>Jose</td>
-      <td class="status-ok">✅</td>
+      <td class="pass">✅</td>
       <td>201</td>
       <td></td>
     </tr>
   
     <tr>
       <td>Carlos</td>
-      <td class="status-ok">✅</td>
+      <td class="pass">✅</td>
       <td>201</td>
       <td></td>
     </tr>
   
     <tr>
       <td>b</td>
-      <td class="status-ok">✅</td>
+      <td class="fail">❌</td>
       <td>201</td>
-      <td></td>
+      <td>Nombre demasiado corto</td>
     </tr>
   
-  </tbody>
-</table>
-
-<div class="summary">
+    </tbody>
+  </table>
   <p><strong>Total usuarios validados:</strong> 6</p>
-  <p><strong>Pasaron:</strong> 6</p>
-  <p><strong>Fallaron:</strong> 0</p>
-</div>
+  <p><strong>Pasaron:</strong> 5</p>
+  <p><strong>Fallaron:</strong> 1</p>
